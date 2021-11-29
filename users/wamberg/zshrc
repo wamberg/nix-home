@@ -1,3 +1,10 @@
+# Pure prompt setup
+PURE_GIT_UNTRACKED_DIRTY=0
+autoload -U promptinit; promptinit; prompt off; prompt pure
+
+# Eliminate vi-mode normal mode delay
+KEYTIMEOUT=1
+
 # cd into a fuzzy (via fzf) directory
 c () {
   local dest="${1:-${HOME}/dev}"
@@ -38,4 +45,3 @@ ct () {
   [ $? -eq 0 ] || return 1
   tns
 }
-
