@@ -18,6 +18,7 @@
     gnupg
     google-chrome
     neovimWamberg
+    nodejs-16_x
     pinentry_qt
     ripgrep
     rsync
