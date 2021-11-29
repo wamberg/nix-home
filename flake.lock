@@ -188,14 +188,15 @@
         "vim-css-color": "vim-css-color",
         "vim-nix": "vim-nix",
         "vim-test": "vim-test",
-        "vim-tmux-navigator": "vim-tmux-navigator"
+        "vim-tmux-navigator": "vim-tmux-navigator",
+        "vimwiki": "vimwiki"
       },
       "locked": {
-        "lastModified": 1637839349,
-        "narHash": "sha256-I7NPkpD1fneK6sc94hiKTv1CjU5EJzqVOkULQwiKzWg=",
+        "lastModified": 1638204514,
+        "narHash": "sha256-7KS/UcRPX9CwzT3k1MyeOZJ2jlQkWulCOABCxEOZg3M=",
         "owner": "wamberg",
         "repo": "neovim-flake",
-        "rev": "f1e684f53b9a5be0064b9ae276080fbfdb86ca28",
+        "rev": "a3441028b34ede8051a33b69a12887c2bfbd6365",
         "type": "github"
       },
       "original": {
@@ -515,6 +516,22 @@
       "original": {
         "owner": "christoomey",
         "repo": "vim-tmux-navigator",
+        "type": "github"
+      }
+    },
+    "vimwiki": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1590529171,
+        "narHash": "sha256-XAa+jYIBWFiG6Q8rxtZQw7HYzc97SGn0aXwNKjdhsQ0=",
+        "owner": "vimwiki",
+        "repo": "vimwiki",
+        "rev": "619f04f89861c58e5a6415a4f83847752928252d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vimwiki",
+        "repo": "vimwiki",
         "type": "github"
       }
     }
