@@ -1,0 +1,41 @@
+# cd into a fuzzy (via fzf) directory
+c () {
+  local dest="${1:-${HOME}/dev}"
+  D="$(\
+    rg \
+      --hidden \
+      --no-ignore \
+      --follow \
+      --files \
+      --ignore-file ~/.gitignore_global \
+      --null \
+      ${dest} \
+      2> /dev/null \
+    | xargs -0 dirname \
+    | sort -u \
+    | fzf)"
+  [ $? -eq 0 ] || return 1
+  cd "${D}"
+}
+
+# Open a named tmux session. Use the last directory in current path as the
+# session name.
+tns () {
+  local name="${1:-${PWD##*/}}"
+  tmux new-session -ds "${name}"
+  tmux rename-window -t "${name}":0 "manage"
+  tmux new-window -t "${name}" -n "code"
+  tmux send-keys -t "${name}":1 nvim C-m
+  tmux new-window -t "${name}" -n "nav"
+  tmux last-window -t "${name}"
+  tmux attach-session -t "${name}"
+}
+
+# Fuzzy change into a directory. Open a named tmux session there.
+ct () {
+  local dest="${1:-${HOME}/dev}"
+  c "${dest}"
+  [ $? -eq 0 ] || return 1
+  tns
+}
+
