@@ -192,11 +192,11 @@
         "vimwiki": "vimwiki"
       },
       "locked": {
-        "lastModified": 1638211915,
-        "narHash": "sha256-XlcWPUMqDljLqZ0ZWg7JjObSd7iNdIAX3HIXkFB3v2U=",
+        "lastModified": 1638219502,
+        "narHash": "sha256-wbjLOS+tDrZMfp0pfhAd9TstUp9C6Km4iud4oyWWUew=",
         "owner": "wamberg",
         "repo": "neovim-flake",
-        "rev": "6f06bfa4b44a2c71e8309e1039e3fc41171608d1",
+        "rev": "b8925fb2c276fb58e8b2688d601553de91e49648",
         "type": "github"
       },
       "original": {
