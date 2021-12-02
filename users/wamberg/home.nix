@@ -26,6 +26,7 @@
     tree
     unzip
     wget
+    zoom-us
   ];
 
   programs.alacritty = {
