@@ -186,17 +186,18 @@
         "popup-nvim": "popup-nvim",
         "rnix-lsp": "rnix-lsp",
         "vim-css-color": "vim-css-color",
+        "vim-gitgutter": "vim-gitgutter",
         "vim-nix": "vim-nix",
         "vim-test": "vim-test",
         "vim-tmux-navigator": "vim-tmux-navigator",
         "vimwiki": "vimwiki"
       },
       "locked": {
-        "lastModified": 1638219502,
-        "narHash": "sha256-wbjLOS+tDrZMfp0pfhAd9TstUp9C6Km4iud4oyWWUew=",
+        "lastModified": 1638471620,
+        "narHash": "sha256-hJs/eeUSwPFQTQCtlNrNhSIvF9Xewqvbe0yF2//Pqag=",
         "owner": "wamberg",
         "repo": "neovim-flake",
-        "rev": "b8925fb2c276fb58e8b2688d601553de91e49648",
+        "rev": "2370f4680afafb115fbb27ec1e46bb4b59968844",
         "type": "github"
       },
       "original": {
@@ -468,6 +469,22 @@
       "original": {
         "owner": "ap",
         "repo": "vim-css-color",
+        "type": "github"
+      }
+    },
+    "vim-gitgutter": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1631023800,
+        "narHash": "sha256-9C76ft/YngzIrjf7NIRlEgx3qUuOZjcmwBqpVDQ76n4=",
+        "owner": "airblade",
+        "repo": "vim-gitgutter",
+        "rev": "256702dd1432894b3607d3de6cd660863b331818",
+        "type": "github"
+      },
+      "original": {
+        "owner": "airblade",
+        "repo": "vim-gitgutter",
         "type": "github"
       }
     },
