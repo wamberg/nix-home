@@ -117,6 +117,12 @@
 
   };
 
+  # Neovim
+  home.file.".editorconfig" = {
+    source = ./editorconfig;
+  };
+
+  # Tmux
   home.file.".config/tmux/session-finder.bash" = {
     source = ./session-finder.bash;
     executable = true;
