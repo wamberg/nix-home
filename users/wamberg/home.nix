@@ -23,6 +23,7 @@
     pinentry_qt
     ripgrep
     rsync
+    tdesktop
     tree
     unzip
     wget
